@@ -8,8 +8,8 @@
 
 **Given an array B find the number of pairs such that `L <= (b[i] + b[j]) <= R`**
 
-0 1 2 3 4 5 6
-L = 3  R = 5
+0 1 2 3 4 5 6.
+L = 3  R = 5.
 - Sort
 - `F[g]` = no. of pairs such that `b[i]+b[j] <=g`
 - Answer = `F[R] - F[L-1]`
