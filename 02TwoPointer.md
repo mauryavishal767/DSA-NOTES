@@ -99,3 +99,23 @@ o\p = yes
 - for every index we will check if index(i<sub>1</sub>) in A associated with `b[j-1]` is occure before index(i<sub>2</sub>) which is associated with `b[j+1]`. or else j is not a good index.
 
 ---
+
+**Given array A[ ] and int L, R. find the shortest lenght of subarray of A which have all the elements form L to R**
+[Document](https://docs.google.com/document/d/1cdFabtpzkEJ9wgdWc3e73Ov7600pte_X9HuSlbjGkEs/edit)
+
+- keep a map to have track of elemnts btwn L and R.
+- `i = 0`, `j = 0`
+- j++ and push in map if in range.
+- when `map.size() == R-L+1` (no. of elements) that means all elements are found.
+- now move i to reduce the size of subarray and pop `map[A[i]]`.
+
+---
+
+**Given an array of all non-negative numbers; find the shortest subarray whose `sum >= K`**
+[Document](https://docs.google.com/document/d/1nk2_gDgEson0vwKCgPUUKgdiBmygNL7ctlNuUTGu75E/edit)
+
+- `i = 0`, `j = 0` 
+- `j++` and `sum += a[j]`
+- if sum gets >= k, `i--` to reduce the size of subarray.
+
+---
